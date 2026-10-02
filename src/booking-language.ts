@@ -54,7 +54,7 @@ export function parseBooking(text: string, professionals: Professional[], today 
     if ((/\btarde\b|\bp\.?\s*m\.?/.test(input)) && h < 12) h += 12;
     const time = `${String(h).padStart(2, '0')}:${hour[2] || (hour[3] ? '30' : '00')}`;
     if (bookingTimes.includes(time)) draft.time = time;
-    else notes.push(`No hay un horario simulado a las ${time}. Selecciona otro.`);
+    else notes.push(`No hay un horario disponible a las ${time}. Selecciona otro.`);
   } else if (/(?:por|en|de) la manana/.test(input)) {
     draft.time = '09:00'; notes.push('Para la mañana proponemos las 09:00. Puedes cambiar la hora.');
   } else if (/\btarde\b/.test(input)) {

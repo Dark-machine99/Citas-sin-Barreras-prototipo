@@ -93,6 +93,11 @@ html[data-high-contrast='true'] .is-listening {outline:3px solid #ff0;outline-of
 
 /* Responsive corrections preserve the desktop navigation and page grids. */
 .mobile-account{display:none}
+.brand-mark{flex:0 0 42px;line-height:1}
+.brand-mark svg{width:24px;height:24px;display:block}
+.auth-card>.back-link{display:flex;width:fit-content;align-items:center;min-height:44px;margin:0 0 1.25rem;line-height:1.4}
+.auth-card>.eyebrow{display:block;margin-bottom:.65rem}
+.auth-brand>.brand{margin-bottom:2rem}
 body,.public-page,.auth-page,.app-shell,.error-page{min-height:100dvh}
 .modal-backdrop{overflow-y:auto;overscroll-behavior:contain;padding:max(1rem,env(safe-area-inset-top)) max(1rem,env(safe-area-inset-right)) max(1rem,env(safe-area-inset-bottom)) max(1rem,env(safe-area-inset-left))}
 .modal{min-width:0;max-width:100%;max-height:calc(100dvh - 2rem - env(safe-area-inset-top) - env(safe-area-inset-bottom));overflow-y:auto;overscroll-behavior:contain}
